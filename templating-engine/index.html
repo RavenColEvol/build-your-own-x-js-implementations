@@ -1,0 +1,10 @@
+<script type="module">
+    import TemplateEngine from './src.js';
+    const template = 'Hello, my name is {{profile.name}}. I\'m {{profile.age}} years old.';
+    document.body.innerHTML = TemplateEngine(template, {
+        profile: {
+            name: 'Ravi Lamkoti',
+            age: 23
+        }
+    });
+</script>
